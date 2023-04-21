@@ -37,7 +37,7 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner) {
             val currentTime = Calendar.getInstance().time
             textView.text =
-                android.text.format.DateFormat.format("yyyy-MM-dd HH:mm:ss", currentTime)
+                android.text.format.DateFormat.format("hh:mm:ss a", currentTime)
         }
         startClock()
         return root
