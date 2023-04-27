@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.jason.catalarm.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_focus"
+        android:name="com.jason.catalarm.ui.focus.FocusFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_focus" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.jason.catalarm.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_settings"
+        android:name="com.jason.catalarm.ui.settings.SettingsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:paddingBottom="68dp"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_group_title_display"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"></TextView>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_plugin"
+            app:setting_item_icon="@drawable/setting_item_icon_plugin">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_theme"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_group_title_nomal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"></TextView>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_light"
+            app:setting_item_type="1"
+            app:setting_item_icon="@drawable/setting_item_icon_light">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_orientation"
+            app:setting_item_type="1"
+            app:setting_item_icon="@drawable/setting_item_icon_ori">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_upgrade"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_recover"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_group_title_about"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"></TextView>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_score"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_share"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_agreement"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+        <com.jason.catalarm.ui.SettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            app:setting_item_content="@string/setting_group_item_privacy"
+            app:setting_item_icon="@drawable/setting_item_icon_default">
+        </com.jason.catalarm.ui.SettingItem>
+
+    </LinearLayout>
+
+</ScrollView>

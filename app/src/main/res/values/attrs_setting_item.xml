@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="SettingItem">
+        <attr name="setting_item_content" format="string" />
+        <attr name="setting_item_icon" format="reference" />
+        <attr name="setting_item_type" format="integer" />
+    </declare-styleable>
+</resources>

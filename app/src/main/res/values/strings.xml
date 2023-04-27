@@ -1,6 +1,55 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">catAlarm</string>
-    <string name="title_home">闹铃</string>
-    <string name="title_dashboard">快速</string>
-    <string name="title_notifications">我的</string>
+    <string name="title_home">闹钟</string>
+    <string name="title_dashboard">专注</string>
+    <string name="title_notifications">设置</string>
+
+    <string name="confirm">确定</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!--设置页面-->
+    <string name="setting_group_title_display">显示设置</string>
+    <string name="setting_group_title_nomal">通用设置</string>
+    <string name="setting_group_title_about">关于我们</string>
+    <string name="setting_group_item_plugin">小组件样式</string>
+    <string name="setting_group_item_theme">主题</string>
+    <string name="setting_group_item_light">摇晃开启手电</string>
+    <string name="setting_group_item_orientation">禁止自动锁屏</string>
+    <string name="setting_group_item_upgrade">升级专业版</string>
+    <string name="setting_group_item_recover">恢复购买</string>
+    <string name="setting_group_item_score">评分</string>
+    <string name="setting_group_item_share">分享</string>
+    <string name="setting_group_item_agreement">用户协议</string>
+    <string name="setting_group_item_privacy">隐私协议</string>
+    <string name="title_activity_exceple_settings">ExcepleSettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!--    &lt;!&ndash; Preference Titles &ndash;&gt;-->
+    <!--    <string name="messages_header">Messages</string>-->
+    <!--    <string name="sync_header">Sync</string>-->
+
+    <!--    &lt;!&ndash; Messages Preferences &ndash;&gt;-->
+    <!--    <string name="signature_title">Your signature</string>-->
+    <!--    <string name="reply_title">Default reply action</string>-->
+
+    <!--    &lt;!&ndash; Sync Preferences &ndash;&gt;-->
+    <!--    <string name="sync_title">Sync email periodically</string>-->
+    <!--    <string name="attachment_title">Download incoming attachments</string>-->
+    <!--    <string name="attachment_summary_on">Automatically download attachments for incoming emails-->
+    <!--    </string>-->
+    <!--    <string name="attachment_summary_off">Only download attachments when manually requested</string>-->
 </resources>
