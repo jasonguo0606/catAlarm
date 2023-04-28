@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,14 +8,14 @@
     tools:context=".ui.home.HomeFragment">
 
     <RelativeLayout
+        android:id="@+id/rl_home_header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        android:background="#123456">
+        android:layout_height="326dp"
+        android:background="@color/home_header_bg">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="326dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:scaleType="fitStart"
             android:src="@drawable/home_header_bg" />
@@ -37,10 +37,8 @@
             android:id="@+id/tc_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/tc_date"
-            android:layout_alignEnd="@+id/tc_date"
+            android:layout_below="@id/tc_date"
             android:layout_gravity="center_horizontal"
-            android:layout_marginEnd="0dp"
             android:format12Hour="hh:mm:ss"
             android:format24Hour="HH:mm:ss"
             android:gravity="center"
@@ -49,14 +47,21 @@
             android:textStyle="bold"></TextClock>
     </RelativeLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_clock_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_home_header"
+        android:background="#975311"/>
+
     <ImageButton
         android:id="@+id/ib_add_clock"
         android:layout_width="86dp"
         android:layout_height="86dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="14dp"
         android:src="@drawable/home_add_clock"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

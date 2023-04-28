@@ -1,19 +1,16 @@
 package com.jason.catalarm.ui
 
 import android.content.Context
-import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
-import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.jason.catalarm.R
-import com.jason.catalarm.databinding.SettingItemBinding
 
-class SettingItem : ConstraintLayout {
+class SettingItemView : ConstraintLayout {
 
 //    private var binding : SettingItemBinding? = null
     private var mContext : Context? = null

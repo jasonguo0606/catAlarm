@@ -10,7 +10,11 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.jason.catalarm.databinding.FragmentHomeBinding
+import com.jason.catalarm.ui.ClockAdapter
 
 class HomeFragment : Fragment() {
 
@@ -37,6 +41,16 @@ class HomeFragment : Fragment() {
 //        homeViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
+
+        //初始化recyclerview
+        val recyclerview : RecyclerView = binding.rvClockList
+        val linearLayout = LinearLayoutManager(activity)
+        linearLayout.orientation = LinearLayoutManager.VERTICAL
+        recyclerview.layoutManager = linearLayout
+        val adapter = ClockAdapter()
+        recyclerview.adapter = adapter
+
+        //初始化添加闹钟按钮
         val ibAddClock: ImageButton = binding.ibAddClock
         ibAddClock.setOnClickListener {
             val intent = Intent(activity, AddClockActivity::class.java)
