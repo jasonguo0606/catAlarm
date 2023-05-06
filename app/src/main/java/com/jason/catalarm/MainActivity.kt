@@ -19,10 +19,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // 设置状态栏颜色
         window.statusBarColor = resources.getColor(R.color.home_header_bg)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // 隐藏actionbar
         supportActionBar?.hide()
 
         val navView: BottomNavigationView = binding.navView

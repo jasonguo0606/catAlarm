@@ -2,17 +2,14 @@ package com.jason.catalarm.ui.home
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.jason.catalarm.databinding.FragmentHomeBinding
 import com.jason.catalarm.ui.ClockAdapter
 
@@ -44,9 +41,19 @@ class HomeFragment : Fragment() {
 
         //初始化recyclerview
         val recyclerview : RecyclerView = binding.rvClockList
-        val linearLayout = LinearLayoutManager(activity)
-        linearLayout.orientation = LinearLayoutManager.VERTICAL
-        recyclerview.layoutManager = linearLayout
+//        val linearLayout = LinearLayoutManager(activity)
+//        linearLayout.orientation = LinearLayoutManager.VERTICAL
+
+        val layoutManager: LinearLayoutManager = object : LinearLayoutManager(activity) {
+            override fun generateDefaultLayoutParams(): RecyclerView.LayoutParams {
+                return RecyclerView.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+                )
+            }
+        }
+
+        recyclerview.layoutManager = layoutManager
         val adapter = ClockAdapter()
         recyclerview.adapter = adapter
 

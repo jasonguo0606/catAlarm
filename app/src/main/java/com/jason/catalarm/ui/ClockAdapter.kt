@@ -1,5 +1,6 @@
 package com.jason.catalarm.ui
 
+import android.graphics.Color
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 

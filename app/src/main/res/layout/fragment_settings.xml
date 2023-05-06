@@ -39,7 +39,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             app:setting_item_content="@string/setting_group_item_theme"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
+            app:setting_item_icon="@drawable/setting_item_icon_theme">
         </com.jason.catalarm.ui.SettingItemView>
 
         <TextView
@@ -80,17 +80,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             app:setting_item_content="@string/setting_group_item_upgrade"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
-        </com.jason.catalarm.ui.SettingItemView>
-
-        <com.jason.catalarm.ui.SettingItemView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="15dp"
-            app:setting_item_content="@string/setting_group_item_recover"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
+            app:setting_item_icon="@drawable/setting_item_icon_upgrade">
         </com.jason.catalarm.ui.SettingItemView>
 
         <TextView
@@ -109,7 +99,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             app:setting_item_content="@string/setting_group_item_score"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
+            app:setting_item_icon="@drawable/setting_item_icon_score">
         </com.jason.catalarm.ui.SettingItemView>
 
         <com.jason.catalarm.ui.SettingItemView
@@ -119,7 +109,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             app:setting_item_content="@string/setting_group_item_share"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
+            app:setting_item_icon="@drawable/setting_item_icon_share">
         </com.jason.catalarm.ui.SettingItemView>
 
         <com.jason.catalarm.ui.SettingItemView
@@ -129,7 +119,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             app:setting_item_content="@string/setting_group_item_agreement"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
+            app:setting_item_icon="@drawable/setting_item_icon_agreement">
         </com.jason.catalarm.ui.SettingItemView>
 
         <com.jason.catalarm.ui.SettingItemView
@@ -139,7 +129,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             app:setting_item_content="@string/setting_group_item_privacy"
-            app:setting_item_icon="@drawable/setting_item_icon_default">
+            app:setting_item_icon="@drawable/setting_item_icon_privacy">
         </com.jason.catalarm.ui.SettingItemView>
 
     </LinearLayout>

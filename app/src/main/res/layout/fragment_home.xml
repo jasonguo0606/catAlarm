@@ -52,15 +52,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/rl_home_header"
-        android:background="#975311"/>
+        android:background="#f2f2f2"/>
 
     <ImageButton
         android:id="@+id/ib_add_clock"
-        android:layout_width="86dp"
-        android:layout_height="86dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="14dp"
-        android:src="@drawable/home_add_clock"
+        android:background="@drawable/home_addclock_btn_shape"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true" />
 
